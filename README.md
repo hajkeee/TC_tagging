@@ -19,6 +19,8 @@
 ### Screenshot - view_item_list:
 ![Alt text](tc_view_item_list.png)
 
+### Generate additional view_item_list when the user clicks on 'Load More'
+![Alt text](tc_view_item.png)
 
 
 ### view_item_list
