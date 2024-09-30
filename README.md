@@ -30,19 +30,19 @@ dataLayer.push({
       item_list_id: "s.3duz.4.m1orodl5",
       items: [
          {
-            index: 0,
-            item_id: "LGW-CFU",
-            item_name: "GB-GR",
-            affiliation: "",
-            currency: "GBR",
-            price: 887.57,
-            item_brand: "Packages",
-            item_category: "", 
-            item_category2: "",
-            item_category3: "110990",
+            index: 0, // list position
+            item_id: "LGW-CFU", // city - city
+            item_name: "GB-GR", // country - country
+            affiliation: "", 
+            currency: "GBR", // currency
+            price: 887.57, // item price
+            item_brand: "Packages", // flight and hotel
+            item_category: "RoundTrip", //
+            item_category2: "International", // domestic or international
+            item_category3: "|U2|A3|FR|", // airlines
             item_category4: "42",
             item_category5: "2",
-            item_variant: "2|0|0|0",
+            item_variant: "2|0|0|0", // 
             quantity: 1
          },
          {
@@ -81,12 +81,12 @@ dataLayer.push({
         item_list_id: "s.3duz.4.m1orodl5",
         items: [
             {
-                item_id: "Laguna Holiday Resort",
-                item_name: "Laguna Holiday Resort",
-                affiliation: "",
-                currency: "GBR",
-                price: 498.22,
-                item_brand: "Hotel",
+                item_id: "Laguna Holiday Resort", // hotel name
+                item_name: "Laguna Holiday Resort", //hotel name
+                affiliation: "", // 
+                currency: "GBR", // currency
+                price: 498.22, // hotel price
+                item_brand: "Hotel", // 
                 item_category: "",
                 item_category2: "",
                 item_category3: "110990",
