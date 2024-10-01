@@ -574,7 +574,7 @@ dataLayer.push({
 
 
 
-### Code - purchase - tag should be executed from back-end when transaction was fully procced 
+# Code - purchase - tag should be executed from back-end when transaction was fully procced 
 ```html
 
 https://www.google-analytics.com/mp/collect?measurement_id=G-XXXXXXXXXX&api_secret=YOUR_API_SECRET
