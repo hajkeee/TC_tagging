@@ -165,7 +165,7 @@ dataLayer.push({
 ```
 
 
-## Screenshot - add_to_cart - tag should be executed after user selected all ancillaries and clicked "Continue". Please note, data final data should be updated based on selected ancillaries (transfer, luggage, car):
+## Screenshot - add_to_cart - tag should be executed after user selected all ancillaries and clicked "Continue". Please note, final data should be updated based on selected ancillaries (transfer, luggage, car):
 ![Alt text](tc_add_to_card.png)
 
 
