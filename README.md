@@ -267,12 +267,116 @@ dataLayer.push({
 ```
 
 
+### Screenshot - begin_checkout - tag should be executed when user loaded passenger info page
+
+![Alt text](tc_begin_checkout.png)
+
+
 ## begin_checkout
 ```html 
 dataLayer.push({
   event: "begin_checkout",
-    step: "extras" | "passenger_info" | "payment",
-    value : 2,074.18
+    value : 1,378.72
+    "ecommerce": {
+      items: [
+      {
+        item_id: "CRF",
+        item_name: "GB - GR",
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Flight",
+        item_category: "MultiCity",
+        item_category2: "International",
+        item_category3: "U2|A3|FR", // airlines
+        item_category4: "20", // comment
+        item_category5: "2", // comment
+        item_variant: "2|0|0|0",
+        price: 576.24,
+        quantity: 1
+      },
+      {
+        item_id: "Sandy Beach Resort",
+        item_name: "Sandy Beach Resort",
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Hotel",
+        item_category3: "218640", 
+        item_category4: "20", 
+        item_category5: "2", 
+        item_category6: "4", 
+        item_variant: "2|0",
+        price: 1276.92,
+        quantity: 1
+       },
+       {
+        item_id: "21321321", // Seat id if applicable 
+        item_name: "1C Extra legroom/exit seat", // if applicable
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Seat",
+        item_category3: ", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "",
+        price: 32.00,
+        quantity: 1
+       },
+       {
+        item_id: "2132131", // Luggage id
+        item_name: "22kg Checked-in bag", // selected option - Checked-in bag|Sport equipment
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Luggage", // if user selected additonal bags
+        item_category3: "", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "22",
+        price: 162.00, // based on selection
+        quantity: 1
+       },
+       {
+        item_id: "2132131", // transfer type id
+        item_name: "Shared standard shuttle", // Shared standard shuttle| Private standard car| Private premium car| Private standard minibus| Private premium minibus
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Transfer", // if user selected transfer
+        item_category3: "", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "2|0",
+        price: 20.54, // based on selection
+        quantity: 1
+       }.
+        item_id: "2132131", // car id
+        item_name: "Citroen C1, Volkswagen Up or similar - MDMRAA", // selected car
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Car", // if user selected car
+        item_category3: "", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "2|0",
+        price: 68.64, // based on selection
+        quantity: 1
+      
+    ]
+   },
+
+});
+```
+### Screenshot - add_shipping_info - tag should be executed when user complited passenger details section and clicked "Continue"
+
+![Alt text](tc_add_shipping_data.png)
+
+## begin_checkout
+```html 
+dataLayer.push({
+  event: "add_shipping_info",
+    value : 1,378.72
     "ecommerce": {
       items: [
       {
@@ -365,8 +469,99 @@ dataLayer.push({
 });
 ```
 
-## Screenshot:
-![Alt text](tc_begin_checkout.png)
+### Screenshot - purchase - tag should be executed from back-end when transaction was fully procced 
+```html
+
+https://www.google-analytics.com/mp/collect?measurement_id=G-XXXXXXXXXX&api_secret=YOUR_API_SECRET
+
+{
+  "client_id": "1234567890.9876543210",  // Unique identifier for the user (client)
+  "events": [{
+    "name": "purchase",  // Event name indicating a purchase transaction
+    "params": {
+      "transaction_id": "T12345", // Unique transaction ID
+      "value": 2136.34, // Total value of the transaction, calculated from all items
+      "currency": "GBR", // Currency used for the transaction
+      "affiliation": "Online Store", // Store or channel where the purchase occurred
+      "session_id": "ABCDEFGH1234567",  // Unique session ID for tracking the session
+      "timestamp_micros": 1661993200000000,  // Timestamp in microseconds (example)
+      "items": [
+        {
+          "item_id": "CRF",  // Unique ID for the flight item
+          "item_name": "GB - GR",  // Name or description of the flight
+          "affiliation": "",  // Affiliation, if any (optional)
+          "currency": "GBR",  // Currency for this item
+          "item_brand": "Flight",  // Brand category for the item (Flight)
+          "item_category": "MultiCity",  // Item category (Multi-city flight)
+          "item_category2": "International",  // Subcategory (International)
+          "item_category3": "U2|A3|FR",  // Airlines involved
+          "item_category4": "20",  // Additional category data
+          "item_category5": "2",  // Additional category data
+          "item_variant": "2|0|0|0",  // Variant information
+          "price": 576.24,  // Price of this item
+          "quantity": 1  // Quantity of this item purchased
+        },
+        {
+          "item_id": "Sandy Beach Resort",  // Unique ID for the hotel item
+          "item_name": "Sandy Beach Resort",  // Name or description of the hotel
+          "affiliation": "",  // Affiliation, if any (optional)
+          "currency": "GBR",  // Currency for this item
+          "item_brand": "Hotel",  // Brand category for the item (Hotel)
+          "item_category3": "218640",  // Hotel category ID
+          "item_category4": "20",  // Additional category data
+          "item_category5": "2",  // Additional category data
+          "item_category6": "4",  // Additional category data
+          "item_variant": "2|0",  // Variant information
+          "price": 1276.92,  // Price of this item
+          "quantity": 1  // Quantity of this item purchased
+        },
+        {
+          "item_id": "21321321",  // Unique ID for the seat
+          "item_name": "1C Extra legroom/exit seat",  // Name or description of the seat
+          "affiliation": "",  // Affiliation, if any (optional)
+          "currency": "GBR",  // Currency for this item
+          "item_brand": "Seat",  // Brand category for the item (Seat)
+          "price": 32.00,  // Price of this item
+          "quantity": 1  // Quantity of this item purchased
+        },
+        {
+          "item_id": "2132131",  // Unique ID for luggage
+          "item_name": "22kg Checked-in bag",  // Name or description of the luggage item
+          "affiliation": "",  // Affiliation, if any (optional)
+          "currency": "GBR",  // Currency for this item
+          "item_brand": "Luggage",  // Brand category for the item (Luggage)
+          "item_variant": "22",  // Luggage weight variant (22 kg)
+          "price": 162.00,  // Price of this item
+          "quantity": 1  // Quantity of this item purchased
+        },
+        {
+          "item_id": "2132131",  // Unique ID for the transfer
+          "item_name": "Shared standard shuttle",  // Name or description of the transfer
+          "affiliation": "",  // Affiliation, if any (optional)
+          "currency": "GBR",  // Currency for this item
+          "item_brand": "Transfer",  // Brand category for the item (Transfer)
+          "item_variant": "2|0",  // Transfer variant information
+          "price": 20.54,  // Price of this item
+          "quantity": 1  // Quantity of this item purchased
+        },
+        {
+          "item_id": "2132131",  // Unique ID for the car rental
+          "item_name": "Citroen C1, Volkswagen Up or similar - MDMRAA",  // Name or description of the car
+          "affiliation": "",  // Affiliation, if any (optional)
+          "currency": "GBR",  // Currency for this item
+          "item_brand": "Car",  // Brand category for the item (Car rental)
+          "item_variant": "2|0",  // Car variant information
+          "price": 68.64,  // Price of this item
+          "quantity": 1  // Quantity of this item purchased
+        }
+      ]
+    }
+  }]
+}
+
+
+```
+
 
   
   ### Referenсes 
