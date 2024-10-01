@@ -19,10 +19,6 @@
 ### Screenshot - view_item_list - tag should be executed after user complited search action in service with parametrs in the datalayer:
 ![Alt text](tc_view_item_list.png)
 
-### Generate additional view_item_list when the user clicks on 'Load More'
-![Alt text](tc_view_item.png)
-
-
 ### view_item_list
 ```html 
 dataLayer.push({
@@ -58,6 +54,56 @@ dataLayer.push({
             item_category: "",
             item_category2: "",
             item_category3: "119610",
+            item_category4: "42",
+            item_category5: "2",
+            item_variant: "2|0|0|0",
+            quantity: 1
+         }
+      ]
+   }
+});
+
+```
+
+### Generate additional view_item_list when the user clicks on 'Load More'
+![Alt text](tc_load_more.png)
+
+
+### view_item_list
+```html 
+dataLayer.push({
+   event: "view_item_list",
+   ecommerce: {
+      item_list_name: "Search", // how item list was generated
+      item_list_id: "s.3duz.4.m1orodl5", // list_id
+      items: [
+         {
+            index: 13, // item position
+            item_id: "LGW-CFU", // city - city
+            item_name: "GB-GR", // country - country
+            affiliation: "", // if applicable
+            currency: "GBR", // currency
+            price: 1039.38, // single item price
+            item_brand: "Packages", // flight and hotel
+            item_category: "RoundTrip", //
+            item_category2: "International", // domestic or international
+            item_category3: "|U2|A3|FR|", // airlines
+            item_category4: "42", //comment
+            item_category5: "2", // comment
+            item_variant: "2|0|0|0", // 
+            quantity: 1
+         },
+         {
+            index: 14,
+            item_id: "LTN-CFU",
+            item_name: "GB-GR",
+            affiliation: "",
+            currency: "GBR",
+            price: 696,
+            item_brand: "Packages",
+            item_category: "RoundTrip",
+            item_category2: "International",
+            item_category3: "|U2|A3|FR|",
             item_category4: "42",
             item_category5: "2",
             item_variant: "2|0|0|0",
