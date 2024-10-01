@@ -127,7 +127,7 @@ dataLayer.push({
 ```html 
 dataLayer.push({
   event: "add_to_cart",
-  value: 2074.18,
+  value: 1,378.72, // sum of all ancillaries, tickets, hotel
   ecommerce: {
     items: [
       {
@@ -157,6 +157,20 @@ dataLayer.push({
         item_category6: "4", 
         item_variant: "2|0",
         price: 1276.92,
+        quantity: 1
+       },
+       {
+        item_id: "21321321", // Seat id if applicable 
+        item_name: "1C Extra legroom/exit seat", // if applicable
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Seat",
+        item_category3: ", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "",
+        price: 32.00,
         quantity: 1
        },
        {
