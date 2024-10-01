@@ -116,7 +116,7 @@ dataLayer.push({
 ```
 
 
-### Screenshot - view_item:
+### Screenshot - view_item - tag should be executed after user clicked and loaded offer page:
 ![Alt text](tc_view_item.png)
 ### 
 
