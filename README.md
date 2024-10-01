@@ -16,7 +16,7 @@
 
 
 
-### Screenshot - view_item_list:
+### Screenshot - view_item_list - tag should be executed after user complited search action in service with parametrs in the datalayer:
 ![Alt text](tc_view_item_list.png)
 
 ### Generate additional view_item_list when the user clicks on 'Load More'
@@ -28,22 +28,22 @@
 dataLayer.push({
    event: "view_item_list",
    ecommerce: {
-      item_list_name: "Search",
-      item_list_id: "s.3duz.4.m1orodl5",
+      item_list_name: "Search", // how item list was generated
+      item_list_id: "s.3duz.4.m1orodl5", // list_id
       items: [
          {
-            index: 0, // list position
+            index: 0, // item position
             item_id: "LGW-CFU", // city - city
             item_name: "GB-GR", // country - country
-            affiliation: "", 
+            affiliation: "", // if applicable
             currency: "GBR", // currency
-            price: 887.57, // item price
+            price: 887.57, // single item price
             item_brand: "Packages", // flight and hotel
             item_category: "RoundTrip", //
             item_category2: "International", // domestic or international
             item_category3: "|U2|A3|FR|", // airlines
-            item_category4: "42",
-            item_category5: "2",
+            item_category4: "42", //comment
+            item_category5: "2", // comment
             item_variant: "2|0|0|0", // 
             quantity: 1
          },
@@ -72,7 +72,7 @@ dataLayer.push({
 
 ### Screenshot - view_item:
 ![Alt text](tc_view_item.png)
-
+### 
 
 ### view_item
 ```html 
@@ -83,7 +83,7 @@ dataLayer.push({
         item_list_id: "s.3duz.4.m1orodl5",
         items: [
             {
-                item_id: "Laguna Holiday Resort", // hotel name
+                item_id: "123213213", // hotel id - available in current implementation
                 item_name: "Laguna Holiday Resort", //hotel name
                 affiliation: "", // 
                 currency: "GBR", // currency
@@ -94,23 +94,23 @@ dataLayer.push({
                 item_category3: "110990",
                 item_category4: "42",
                 item_category5: "2",
-                item_variant: "2|0",
+                item_variant: "2|0", // number of guests
                 quantity: 1
             },
             {
-                item_id: "CRF",
-                item_name: "GR",
+                item_id: "CRF", // target place - city
+                item_name: "GR", // target place - country
                 affiliation: "",
-                currency: "GBR",
+                currency: "GBR", 
                 price: 1575.96,
-                item_brand: "Flight",
+                item_brand: "Flight", 
                 item_category: "RoundTrip",
                 item_category2: "International",
                 item_category3: "110990",
                 item_category4: "42",
                 item_category5: "2",
-                item_variant: "2|0|0|0",
-                quantity: 2
+                item_variant: "2|0|0|0", // number of tickets
+                quantity: 1
             }
         ]
     }
@@ -119,7 +119,7 @@ dataLayer.push({
 ```
 
 
-## Screenshot - add_to_cart:
+## Screenshot - add_to_cart - tag should be executed after user selected all ancillaries and clicked "Continue". Please note, data final data should be updated based on selected ancillaries (transfer, luggage, car):
 ![Alt text](tc_view_item.png)
 
 
@@ -135,23 +135,21 @@ dataLayer.push({
         item_name: "GB - GR",
         affiliation: "",
         currency: "GBR",
-        index: 1,
         item_brand: "Flight",
         item_category: "MultiCity",
         item_category2: "International",
-        item_category3: "U2|A3|FR", // Визначити категорію
-        item_category4: "20", // Визначити категорію
-        item_category5: "2", // Визначити категорію
+        item_category3: "U2|A3|FR", // airlines
+        item_category4: "20", // comment
+        item_category5: "2", // comment
         item_variant: "2|0|0|0",
         price: 576.24,
-        quantity: 2
+        quantity: 1
       },
       {
         item_id: "Sandy Beach Resort",
         item_name: "Sandy Beach Resort",
         affiliation: "",
-        currency: "PLN",
-        index: 2,
+        currency: "GBR",
         item_brand: "Hotel",
         item_category3: "218640", 
         item_category4: "20", 
@@ -160,7 +158,48 @@ dataLayer.push({
         item_variant: "2|0",
         price: 1276.92,
         quantity: 1
-      }
+       },
+       {
+        item_id: "2132131", // Luggage id
+        item_name: "22kg Checked-in bag", // selected option - Checked-in bag|Sport equipment
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Luggage", // if user selected additonal bags
+        item_category3: "", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "22",
+        price: 162.00, // based on selection
+        quantity: 1
+       },
+       {
+        item_id: "2132131", // transfer type id
+        item_name: "Shared standard shuttle", // Shared standard shuttle| Private standard car| Private premium car| Private standard minibus| Private premium minibus
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Transfer", // if user selected transfer
+        item_category3: "", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "2|0",
+        price: 20.54, // based on selection
+        quantity: 1
+       }.
+        item_id: "2132131", // car id
+        item_name: "Citroen C1, Volkswagen Up or similar - MDMRAA", // selected car
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Car", // if user selected car
+        item_category3: "", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "2|0",
+        price: 68.64, // based on selection
+        quantity: 1
+      
     ]
   }
 });
