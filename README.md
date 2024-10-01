@@ -120,7 +120,7 @@ dataLayer.push({
 
 
 ## Screenshot - add_to_cart - tag should be executed after user selected all ancillaries and clicked "Continue". Please note, data final data should be updated based on selected ancillaries (transfer, luggage, car):
-![Alt text](tc_view_item.png)
+![Alt text](tc_add_to_card.png)
 
 
 ### add_to_cart
@@ -205,8 +205,6 @@ dataLayer.push({
 });
 
 ```
-
-
 
 
 ## begin_checkout
