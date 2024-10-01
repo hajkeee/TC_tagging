@@ -1,7 +1,7 @@
 # E-Commerce dataLayer for GA4. Measurement Plan
 | Event Name | Explanation | 
 | ---------- | ----------- | 
-| view_item_list  | To measure how often item details are viewed, send a view_item event whenever a user views an item’s details screen. |
+| view_item_list  | To measure how often item details are viewed, send a view_item_list event whenever a user views an item’s list after search. |
 | view_item  | To measure how often item details are viewed, send a view_item event whenever a user views an item’s details screen. |
 | add_to_cart| To measure when someone adds merchandise to their shopping cart as a conversion. |
 | begin_checkout  | Measure the first step in a checkout process by sending a begin_checkout event with one or more items defined with the relevant fields. A coupon can also be added at this stage to the entire order by adding it to the event or applied to a particular item by adding it to specific elements in the items array. | 
@@ -28,34 +28,34 @@ dataLayer.push({
          {
             index: 0, // item position
             item_id: "LGW-CFU", // city - city
-            item_name: "GB-GR", // country - country
-            affiliation: "", // if applicable
-            currency: "GBR", // currency
+            item_name: "GB-GR", // Name or description of the flight
+            affiliation: "", // Affiliation, if any (optional)
+            currency: "GBR", // Currency for this item
             price: 887.57, // single item price
-            item_brand: "Packages", // flight and hotel
+            item_brand: "Packages", // Brand category for the item
             item_category: "RoundTrip", //
-            item_category2: "International", // domestic or international
-            item_category3: "|U2|A3|FR|", // airlines
-            item_category4: "42", //comment
-            item_category5: "2", // comment
-            item_variant: "2|0|0|0", // 
-            quantity: 1
+            item_category2: "International", // Subcategory (International)
+            item_category3: "|U2|A3|FR|", // Airlines involved
+            item_category4: "42", // Additional category data
+            item_category5: "2", // Additional category data
+            item_variant: "2|0|0|0", // Variant information
+            quantity: 1 // Quantity of this item
          },
          {
-            index: 1,
-            item_id: "LTN-CFU",
-            item_name: "GB-GR",
-            affiliation: "",
-            currency: "GBR",
-            price: 926.58,
-            item_brand: "Packages",
-            item_category: "",
-            item_category2: "",
-            item_category3: "119610",
-            item_category4: "42",
-            item_category5: "2",
-            item_variant: "2|0|0|0",
-            quantity: 1
+            index: 1, // item position
+            item_id: "LTN-CFU", // city - city
+            item_name: "GB-GR", // Name or description of the flight
+            affiliation: "", // Affiliation, if any (optional)
+            currency: "GBR", // Currency for this item
+            price: 926.58, // single item price
+            item_brand: "Packages", // Brand category for the item
+            item_category: "RoundTrip", //
+            item_category2: "International", // Subcategory (International)
+            item_category3: "|U2|A3|FR|", // Airlines involved
+            item_category4: "42", // Additional category data
+            item_category5: "2", // Additional category data
+            item_variant: "2|0|0|0", // Variant information
+            quantity: 1 // Quantity of this item
          }
       ]
    }
