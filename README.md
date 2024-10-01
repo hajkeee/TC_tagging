@@ -17,7 +17,7 @@
 # Screenshot - view_item_list - tag should be executed after user complited search action in service with parametrs in the datalayer:
 ![Alt text](tc_view_item_list.png)
 
-### view_item_list
+### Code - view_item_list
 ```html 
 dataLayer.push({
    event: "view_item_list",
@@ -67,7 +67,7 @@ dataLayer.push({
 ![Alt text](tc_load_more.png)
 
 
-### view_item_list
+### Code - view_item_list
 ```html 
 dataLayer.push({
    event: "view_item_list",
@@ -117,7 +117,7 @@ dataLayer.push({
 # Screenshot - view_item - tag should be executed after user clicked and loaded offer page:
 ![Alt text](tc_view_item.png)
 
-### view_item
+### Code - view_item
 ```html 
 dataLayer.push({
     event: "view_item",
@@ -167,7 +167,7 @@ dataLayer.push({
 ![Alt text](tc_add_to_card.png)
 
 
-### add_to_cart
+### Code - add_to_cart
 ```html 
 dataLayer.push({
   event: "add_to_cart",
@@ -271,7 +271,7 @@ dataLayer.push({
 ![Alt text](tc_begin_checkout.png)
 
 
-## begin_checkout
+### Code - begin_checkout
 ```html 
 dataLayer.push({
   event: "begin_checkout",
@@ -372,7 +372,7 @@ dataLayer.push({
 
 ![Alt text](tc_add_shipping_data.png)
 
-## add_shipping_info
+### Code - add_shipping_info
 ```html 
 dataLayer.push({
   event: "add_shipping_info",
@@ -473,7 +473,7 @@ dataLayer.push({
 
 ![Alt text](add_payment_info.png)
 
-## add_payment_info
+### Code - add_payment_info
 ```html 
 dataLayer.push({
   event: "add_shipping_info",
@@ -574,7 +574,7 @@ dataLayer.push({
 
 
 
-# Screenshot - purchase - tag should be executed from back-end when transaction was fully procced 
+### Code - purchase - tag should be executed from back-end when transaction was fully procced 
 ```html
 
 https://www.google-analytics.com/mp/collect?measurement_id=G-XXXXXXXXXX&api_secret=YOUR_API_SECRET
