@@ -471,7 +471,7 @@ dataLayer.push({
 
 # Screenshot - add_payment_info - tag should be executed when user complited payment detail section and clicked "Continue"
 
-![Alt text](tc_add_shipping_data.png)
+![Alt text](add_payment_info.png)
 
 ## add_payment_info
 ```html 
