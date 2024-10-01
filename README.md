@@ -4,12 +4,10 @@
 | view_item_list  | To measure how often item details are viewed, send a view_item event whenever a user views an item’s details screen. |
 | view_item  | To measure how often item details are viewed, send a view_item event whenever a user views an item’s details screen. |
 | add_to_cart| To measure when someone adds merchandise to their shopping cart as a conversion. |
-| remove_from_cart | To measure when a user removes an item from a cart. |
 | begin_checkout  | Measure the first step in a checkout process by sending a begin_checkout event with one or more items defined with the relevant fields. A coupon can also be added at this stage to the entire order by adding it to the event or applied to a particular item by adding it to specific elements in the items array. | 
 | add_shipping_info | When a user proceeds to the next step in the checkout process, shipping information is added. | 
 | add_payment_info  | Send the add_payment_info event when a user submits their payment information. If applicable, include payment_type with this event for the chosen payment method. |
 | Purchase | Measure a purchase by sending a purchase event with one or more items defined with the relevant fields. The same approach may be used for all events. Documentation in the references section. |
-| Refund | Measure a purchase by sending a purchase event with one or more items defined with the relevant fields |
 
 
 # DataLayer Implementation
