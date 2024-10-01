@@ -320,7 +320,7 @@ dataLayer.push({
 ```
 
 ## Screenshot:
-![Alt text]()
+![Alt text](tc_begin_checkout.png)
 
   
   ### Referenсes 
