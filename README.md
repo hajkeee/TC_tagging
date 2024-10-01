@@ -582,6 +582,11 @@ https://www.google-analytics.com/mp/collect?measurement_id=G-XXXXXXXXXX&api_secr
 
 {
   "client_id": "1234567890.9876543210",  // Unique identifier for the user (client)
+  "timestamp_micros": 1661993200000000,  // Timestamp in microseconds (example)
+  "consent": {
+   "ad_user_data" : "GRANTED",
+   "ad_personalization_data" : "GRANTED"
+},
   "events": [{
     "name": "purchase",  // Event name indicating a purchase transaction
     "params": {
@@ -590,7 +595,6 @@ https://www.google-analytics.com/mp/collect?measurement_id=G-XXXXXXXXXX&api_secr
       "currency": "GBR", // Currency used for the transaction
       "affiliation": "Online Store", // Store or channel where the purchase occurred
       "session_id": "ABCDEFGH1234567",  // Unique session ID for tracking the session
-      "timestamp_micros": 1661993200000000,  // Timestamp in microseconds (example)
       "items": [
         {
           "item_id": "CRF",  // Unique ID for the flight item
