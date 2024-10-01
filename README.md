@@ -14,7 +14,7 @@
 
 
 
-### Screenshot - view_item_list - tag should be executed after user complited search action in service with parametrs in the datalayer:
+# Screenshot - view_item_list - tag should be executed after user complited search action in service with parametrs in the datalayer:
 ![Alt text](tc_view_item_list.png)
 
 ### view_item_list
@@ -63,7 +63,7 @@ dataLayer.push({
 
 ```
 
-### Generate additional view_item_list when the user clicks on 'Load More'
+# Generate additional view_item_list when the user clicks on 'Load More'
 ![Alt text](tc_load_more.png)
 
 
@@ -114,9 +114,8 @@ dataLayer.push({
 ```
 
 
-### Screenshot - view_item - tag should be executed after user clicked and loaded offer page:
+# Screenshot - view_item - tag should be executed after user clicked and loaded offer page:
 ![Alt text](tc_view_item.png)
-### 
 
 ### view_item
 ```html 
@@ -164,7 +163,7 @@ dataLayer.push({
 ```
 
 
-## Screenshot - add_to_cart - tag should be executed after user selected all ancillaries and clicked "Continue". Please note, final data should be updated based on selected ancillaries (transfer, luggage, car):
+# Screenshot - add_to_cart - tag should be executed after user selected all ancillaries and clicked "Continue". Please note, final data should be updated based on selected ancillaries (transfer, luggage, car):
 ![Alt text](tc_add_to_card.png)
 
 
@@ -267,7 +266,7 @@ dataLayer.push({
 ```
 
 
-### Screenshot - begin_checkout - tag should be executed when user loaded passenger info page
+# Screenshot - begin_checkout - tag should be executed when user loaded passenger info page
 
 ![Alt text](tc_begin_checkout.png)
 
@@ -369,7 +368,7 @@ dataLayer.push({
 
 });
 ```
-### Screenshot - add_shipping_info - tag should be executed when user complited passenger details section and clicked "Continue"
+# Screenshot - add_shipping_info - tag should be executed when user complited passenger details section and clicked "Continue"
 
 ![Alt text](tc_add_shipping_data.png)
 
@@ -470,7 +469,7 @@ dataLayer.push({
 });
 ```
 
-### Screenshot - add_payment_info - tag should be executed when user complited payment detail section and clicked "Continue"
+# Screenshot - add_payment_info - tag should be executed when user complited payment detail section and clicked "Continue"
 
 ![Alt text](tc_add_shipping_data.png)
 
@@ -575,7 +574,7 @@ dataLayer.push({
 
 
 
-### Screenshot - purchase - tag should be executed from back-end when transaction was fully procced 
+# Screenshot - purchase - tag should be executed from back-end when transaction was fully procced 
 ```html
 
 https://www.google-analytics.com/mp/collect?measurement_id=G-XXXXXXXXXX&api_secret=YOUR_API_SECRET
