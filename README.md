@@ -228,46 +228,99 @@ dataLayer.push({
     step: "extras" | "passenger_info" | "payment",
     value : 2,074.18
     "ecommerce": {
-        "items": [
-         {
-            "item_id": "CRF",
-            "item_name": "GB - GR",
-            "affiliation": "",
-            "currency": "GBR",
-            "index": 1,
-            "item_brand": "Flight",
-            "item_category": "MultiCity",
-            "item_category2": "International",
-            "item_category3": "U2|A3|FR", ???????
-            "item_category4": "20", ???????
-            "item_category5": "2", ???????
-            "item_variant": "2|0|0|0",
-            "price": 576.24,
-            "quantity": 2
-         },
-         {
-            "item_id": "Sandy Beach Resort",
-            "item_name": "Sandy Beach Resort",
-            "affiliation": "",
-            "currency": "PLN",
-            "index": 2,
-            "item_brand": "Hotel",
-            "item_category3": "218640", ???????
-            "item_category4": "20", ???????
-            "item_category5": "2", ???????
-            "item_category6": "4", ???????
-            "item_variant": "2|0",
-            "price": 1276.92,
-            "quantity": 1
-         }
-      ]
+      items: [
+      {
+        item_id: "CRF",
+        item_name: "GB - GR",
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Flight",
+        item_category: "MultiCity",
+        item_category2: "International",
+        item_category3: "U2|A3|FR", // airlines
+        item_category4: "20", // comment
+        item_category5: "2", // comment
+        item_variant: "2|0|0|0",
+        price: 576.24,
+        quantity: 1
+      },
+      {
+        item_id: "Sandy Beach Resort",
+        item_name: "Sandy Beach Resort",
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Hotel",
+        item_category3: "218640", 
+        item_category4: "20", 
+        item_category5: "2", 
+        item_category6: "4", 
+        item_variant: "2|0",
+        price: 1276.92,
+        quantity: 1
+       },
+       {
+        item_id: "21321321", // Seat id if applicable 
+        item_name: "1C Extra legroom/exit seat", // if applicable
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Seat",
+        item_category3: ", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "",
+        price: 32.00,
+        quantity: 1
+       },
+       {
+        item_id: "2132131", // Luggage id
+        item_name: "22kg Checked-in bag", // selected option - Checked-in bag|Sport equipment
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Luggage", // if user selected additonal bags
+        item_category3: "", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "22",
+        price: 162.00, // based on selection
+        quantity: 1
+       },
+       {
+        item_id: "2132131", // transfer type id
+        item_name: "Shared standard shuttle", // Shared standard shuttle| Private standard car| Private premium car| Private standard minibus| Private premium minibus
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Transfer", // if user selected transfer
+        item_category3: "", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "2|0",
+        price: 20.54, // based on selection
+        quantity: 1
+       }.
+        item_id: "2132131", // car id
+        item_name: "Citroen C1, Volkswagen Up or similar - MDMRAA", // selected car
+        affiliation: "",
+        currency: "GBR",
+        item_brand: "Car", // if user selected car
+        item_category3: "", 
+        item_category4: "", 
+        item_category5: "", 
+        item_category6: "", 
+        item_variant: "2|0",
+        price: 68.64, // based on selection
+        quantity: 1
+      
+    ]
    },
 
 });
 ```
 
 ## Screenshot:
-![Alt text](tc_view_item.png)
+![Alt text]()
 
   
   ### Referenсes 
